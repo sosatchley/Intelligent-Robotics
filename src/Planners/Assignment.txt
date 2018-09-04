@@ -7,11 +7,26 @@ Create two distinct planning domains using Pyhop and the Python programming lang
 		
 	Domain Two:
 		Four distinct types of objects
+			Robot
+			Unsigned Document
+			Signed Document
+			Shredded Document
+			Office
+			Dock
 		Five operators
+			GoTo
+			shred
+			take
+			leave
+			sign
 		Three methods
 			At least one of these must have another method in its task decomposition
+				goAndGet
+				takeAndSign
+					Deliver
 		Three distinct starting states
 			At least one of these must yield a plan containing at least ten steps
+				
 		
 	After completing the domains, write a 2-3 page paper containing the following:
 		Introductory paragraph or two describing target domains and why you initially believed that they were suitable for planning

@@ -61,9 +61,27 @@ def takeAndSign(state, document, office):
             ('take', document, office)]
 pyhop.declare_methods('takeAndSign', takeAndSign)
 
+def seek_destroy(state, document):
+    return[('goAndGet', document), 
+           ('shred', document)]
+pyhop.declare_methods('seek_destroy', seek_destroy)
+    
+def take_deliver(state, document, end):
+    return[('goAndGet', document), 
+           ('deliver', document, end)]
+pyhop.declare_methods('take_deliver', take_deliver)
+
+def take_sign_deliver(state, document, sign, end):
+    return[('goAndGet', document), 
+           ('takeAndSign', document, sign),
+           ('deliver', document, end)]
+pyhop.declare_methods('take_sign_deliver', take_sign_deliver)
 
 
-pyhop.pyhop(domains.state1, domains.prob1, verbose=1)
+pyhop.pyhop(domains.state1, domains.prob13, verbose=1)
+pyhop.pyhop(domains.state2, domains.prob2, verbose=1)
+pyhop.pyhop(domains.state3, domains.prob3, verbose=1)
+
 
     
 
