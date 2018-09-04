@@ -1,0 +1,27 @@
+Create two distinct planning domains using Pyhop and the Python programming language. 
+	Domain One:
+		Two distinct types of objects
+		Three operators
+		Two methods
+		Two distinct starting states, at least one of which yields a plan containing at least five steps
+		
+	Domain Two:
+		Four distinct types of objects
+		Five operators
+		Three methods
+			At least one of these must have another method in its task decomposition
+		Three distinct starting states
+			At least one of these must yield a plan containing at least ten steps
+		
+	After completing the domains, write a 2-3 page paper containing the following:
+		Introductory paragraph or two describing target domains and why you initially believed that they were suitable for planning
+		For each domain, one to two paragraphs describing how you encoded that domain. 
+			Pay particular attention to discussing the tradeoffs involved in the encoding. 
+			What domain features are represented explicitly? What domain features have been 
+			abstracted away? Why did you perform those abstractions? How good were the plans 
+			that were produced? What criteria do you have for a "good plan"?
+		Write a concluding paragraph discussing the utility of planning in general. 
+			Under what circumstances is it worthwhile to build and use a planner? When is it 
+			not appropriate? Justify your answers based on the experiences in this project 
+			you described earlier in the paper. 
+		
