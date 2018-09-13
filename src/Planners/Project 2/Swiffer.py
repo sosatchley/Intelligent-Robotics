@@ -1,8 +1,3 @@
-'''
-Created on Sep 4, 2018
-
-@author: Shaneyboi
-'''
 import pyhop
 import domains
 
@@ -36,12 +31,12 @@ def clean_lock(state, room):
 pyhop.declare_methods('clean_lock', clean_lock)
 
 def clean_lock_all(state, rooms):
-
-    return [('clean_lock', rooms[0]),
-            ('clean_lock', rooms[1]),
-            ('clean_lock', rooms[2]),
-            ('clean_lock', rooms[3]),
-            ('clean_lock', rooms[4])]
+    return [[('clean_lock', room)] for room in rooms]
+#     return [('clean_lock', rooms[0]),
+#             ('clean_lock', rooms[1]),
+#             ('clean_lock', rooms[2]),
+#             ('clean_lock', rooms[3]),
+#             ('clean_lock', rooms[4])]
      
 # Ideally, this function would include all dirty rooms in the state and 
 # iteratively or recursively break the function down into the smaller
