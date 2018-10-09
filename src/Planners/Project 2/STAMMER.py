@@ -39,8 +39,6 @@ def sign(state, document, office):
         return False
     
 pyhop.declare_operators(GoTo, shred, take, leave, sign)
-print("")
-pyhop.print_operators()
 
 def goAndGet(state, document):
     robot_start = state.at['robot']
@@ -78,9 +76,9 @@ def take_sign_deliver(state, document, sign, end):
 pyhop.declare_methods('take_sign_deliver', take_sign_deliver)
 
 
-pyhop.pyhop(domains.state1, domains.prob13, verbose=1)
-pyhop.pyhop(domains.state2, domains.prob2, verbose=1)
-pyhop.pyhop(domains.state3, domains.prob3, verbose=1)
+pyhop.pyhop(domains.state1, domains.prob13, verbose=2)
+pyhop.pyhop(domains.state2, domains.prob2, verbose=2)
+pyhop.pyhop(domains.state3, domains.prob3, verbose=2)
 
 
     

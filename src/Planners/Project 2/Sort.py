@@ -1,8 +1,3 @@
-'''
-Created on Sep 4, 2018
-
-@author: Shaneyboi
-'''
 import pyhop
 import domains
 
